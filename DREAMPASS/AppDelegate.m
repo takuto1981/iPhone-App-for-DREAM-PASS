@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  DREAMPASS
 //
-//  Created by 兼平 卓史 on 12/01/11.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Created by 兼平 卓史 on 11/12/07.
+//  Copyright (c) 2011年 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -14,13 +14,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
