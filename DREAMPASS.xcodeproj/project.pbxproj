@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2EE1B4E14BD98C600A57D5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B4D14BD98C600A57D5D /* UIKit.framework */; };
+		D2EE1B5014BD98C600A57D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B4F14BD98C600A57D5D /* Foundation.framework */; };
+		D2EE1B5214BD98C600A57D5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B5114BD98C600A57D5D /* CoreGraphics.framework */; };
+		D2EE1B5814BD98C600A57D5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2EE1B5614BD98C600A57D5D /* InfoPlist.strings */; };
+		D2EE1B5A14BD98C600A57D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EE1B5914BD98C600A57D5D /* main.m */; };
+		D2EE1B5E14BD98C600A57D5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EE1B5D14BD98C600A57D5D /* AppDelegate.m */; };
+		D2EE1B6614BD98C600A57D5D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B6514BD98C600A57D5D /* SenTestingKit.framework */; };
+		D2EE1B6714BD98C600A57D5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B4D14BD98C600A57D5D /* UIKit.framework */; };
+		D2EE1B6814BD98C600A57D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EE1B4F14BD98C600A57D5D /* Foundation.framework */; };
+		D2EE1B7014BD98C600A57D5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2EE1B6E14BD98C600A57D5D /* InfoPlist.strings */; };
+		D2EE1B7314BD98C600A57D5D /* DREAMPASSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EE1B7214BD98C600A57D5D /* DREAMPASSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2EE1B6914BD98C600A57D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2EE1B4014BD98C600A57D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2EE1B4814BD98C600A57D5D;
+			remoteInfo = DREAMPASS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2EE1B4914BD98C600A57D5D /* DREAMPASS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DREAMPASS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EE1B4D14BD98C600A57D5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2EE1B4F14BD98C600A57D5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2EE1B5114BD98C600A57D5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2EE1B5514BD98C600A57D5D /* DREAMPASS-Info.plist */ = {isa = PBXFileReference; path = "DREAMPASS-Info.plist"; sourceTree = "<group>"; };
+		D2EE1B5714BD98C600A57D5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2EE1B5914BD98C600A57D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2EE1B5B14BD98C600A57D5D /* DREAMPASS-Prefix.pch */ = {isa = PBXFileReference; path = "DREAMPASS-Prefix.pch"; sourceTree = "<group>"; };
+		D2EE1B5C14BD98C600A57D5D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2EE1B5D14BD98C600A57D5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2EE1B6414BD98C600A57D5D /* DREAMPASSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DREAMPASSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EE1B6514BD98C600A57D5D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2EE1B6D14BD98C600A57D5D /* DREAMPASSTests-Info.plist */ = {isa = PBXFileReference; path = "DREAMPASSTests-Info.plist"; sourceTree = "<group>"; };
+		D2EE1B6F14BD98C600A57D5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2EE1B7114BD98C600A57D5D /* DREAMPASSTests.h */ = {isa = PBXFileReference; path = DREAMPASSTests.h; sourceTree = "<group>"; };
+		D2EE1B7214BD98C600A57D5D /* DREAMPASSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DREAMPASSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2EE1B4614BD98C600A57D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B4E14BD98C600A57D5D /* UIKit.framework in Frameworks */,
+				D2EE1B5014BD98C600A57D5D /* Foundation.framework in Frameworks */,
+				D2EE1B5214BD98C600A57D5D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EE1B6014BD98C600A57D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B6614BD98C600A57D5D /* SenTestingKit.framework in Frameworks */,
+				D2EE1B6714BD98C600A57D5D /* UIKit.framework in Frameworks */,
+				D2EE1B6814BD98C600A57D5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2EE1B3E14BD98C600A57D5D = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B5314BD98C600A57D5D /* DREAMPASS */,
+				D2EE1B6B14BD98C600A57D5D /* DREAMPASSTests */,
+				D2EE1B4C14BD98C600A57D5D /* Frameworks */,
+				D2EE1B4A14BD98C600A57D5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2EE1B4A14BD98C600A57D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B4914BD98C600A57D5D /* DREAMPASS.app */,
+				D2EE1B6414BD98C600A57D5D /* DREAMPASSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2EE1B4C14BD98C600A57D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B4D14BD98C600A57D5D /* UIKit.framework */,
+				D2EE1B4F14BD98C600A57D5D /* Foundation.framework */,
+				D2EE1B5114BD98C600A57D5D /* CoreGraphics.framework */,
+				D2EE1B6514BD98C600A57D5D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2EE1B5314BD98C600A57D5D /* DREAMPASS */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B5C14BD98C600A57D5D /* AppDelegate.h */,
+				D2EE1B5D14BD98C600A57D5D /* AppDelegate.m */,
+				D2EE1B5414BD98C600A57D5D /* Supporting Files */,
+			);
+			path = DREAMPASS;
+			sourceTree = "<group>";
+		};
+		D2EE1B5414BD98C600A57D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B5514BD98C600A57D5D /* DREAMPASS-Info.plist */,
+				D2EE1B5614BD98C600A57D5D /* InfoPlist.strings */,
+				D2EE1B5914BD98C600A57D5D /* main.m */,
+				D2EE1B5B14BD98C600A57D5D /* DREAMPASS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2EE1B6B14BD98C600A57D5D /* DREAMPASSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B7114BD98C600A57D5D /* DREAMPASSTests.h */,
+				D2EE1B7214BD98C600A57D5D /* DREAMPASSTests.m */,
+				D2EE1B6C14BD98C600A57D5D /* Supporting Files */,
+			);
+			path = DREAMPASSTests;
+			sourceTree = "<group>";
+		};
+		D2EE1B6C14BD98C600A57D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2EE1B6D14BD98C600A57D5D /* DREAMPASSTests-Info.plist */,
+				D2EE1B6E14BD98C600A57D5D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2EE1B4814BD98C600A57D5D /* DREAMPASS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EE1B7614BD98C600A57D5D /* Build configuration list for PBXNativeTarget "DREAMPASS" */;
+			buildPhases = (
+				D2EE1B4514BD98C600A57D5D /* Sources */,
+				D2EE1B4614BD98C600A57D5D /* Frameworks */,
+				D2EE1B4714BD98C600A57D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DREAMPASS;
+			productName = DREAMPASS;
+			productReference = D2EE1B4914BD98C600A57D5D /* DREAMPASS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2EE1B6314BD98C600A57D5D /* DREAMPASSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EE1B7914BD98C600A57D5D /* Build configuration list for PBXNativeTarget "DREAMPASSTests" */;
+			buildPhases = (
+				D2EE1B5F14BD98C600A57D5D /* Sources */,
+				D2EE1B6014BD98C600A57D5D /* Frameworks */,
+				D2EE1B6114BD98C600A57D5D /* Resources */,
+				D2EE1B6214BD98C600A57D5D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2EE1B6A14BD98C600A57D5D /* PBXTargetDependency */,
+			);
+			name = DREAMPASSTests;
+			productName = DREAMPASSTests;
+			productReference = D2EE1B6414BD98C600A57D5D /* DREAMPASSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2EE1B4014BD98C600A57D5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D2EE1B4314BD98C600A57D5D /* Build configuration list for PBXProject "DREAMPASS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2EE1B3E14BD98C600A57D5D;
+			productRefGroup = D2EE1B4A14BD98C600A57D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2EE1B4814BD98C600A57D5D /* DREAMPASS */,
+				D2EE1B6314BD98C600A57D5D /* DREAMPASSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2EE1B4714BD98C600A57D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B5814BD98C600A57D5D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EE1B6114BD98C600A57D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B7014BD98C600A57D5D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2EE1B6214BD98C600A57D5D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2EE1B4514BD98C600A57D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B5A14BD98C600A57D5D /* main.m in Sources */,
+				D2EE1B5E14BD98C600A57D5D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EE1B5F14BD98C600A57D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EE1B7314BD98C600A57D5D /* DREAMPASSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2EE1B6A14BD98C600A57D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2EE1B4814BD98C600A57D5D /* DREAMPASS */;
+			targetProxy = D2EE1B6914BD98C600A57D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2EE1B5614BD98C600A57D5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2EE1B5714BD98C600A57D5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2EE1B6E14BD98C600A57D5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2EE1B6F14BD98C600A57D5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2EE1B7414BD98C600A57D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2EE1B7514BD98C600A57D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2EE1B7714BD98C600A57D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DREAMPASS/DREAMPASS-Prefix.pch";
+				INFOPLIST_FILE = "DREAMPASS/DREAMPASS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2EE1B7814BD98C600A57D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DREAMPASS/DREAMPASS-Prefix.pch";
+				INFOPLIST_FILE = "DREAMPASS/DREAMPASS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D2EE1B7A14BD98C600A57D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DREAMPASS.app/DREAMPASS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DREAMPASS/DREAMPASS-Prefix.pch";
+				INFOPLIST_FILE = "DREAMPASSTests/DREAMPASSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D2EE1B7B14BD98C600A57D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DREAMPASS.app/DREAMPASS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DREAMPASS/DREAMPASS-Prefix.pch";
+				INFOPLIST_FILE = "DREAMPASSTests/DREAMPASSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2EE1B4314BD98C600A57D5D /* Build configuration list for PBXProject "DREAMPASS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EE1B7414BD98C600A57D5D /* Debug */,
+				D2EE1B7514BD98C600A57D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EE1B7614BD98C600A57D5D /* Build configuration list for PBXNativeTarget "DREAMPASS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EE1B7714BD98C600A57D5D /* Debug */,
+				D2EE1B7814BD98C600A57D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2EE1B7914BD98C600A57D5D /* Build configuration list for PBXNativeTarget "DREAMPASSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EE1B7A14BD98C600A57D5D /* Debug */,
+				D2EE1B7B14BD98C600A57D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2EE1B4014BD98C600A57D5D /* Project object */;
+}
