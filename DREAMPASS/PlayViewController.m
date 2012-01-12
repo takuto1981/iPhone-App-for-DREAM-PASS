@@ -61,6 +61,59 @@
     NSURL *url = [NSURL URLWithString:@"http://176.34.20.70:8000/neworder/01"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [HttpClient request:request success:onSuccess error:onError];
+    
+    
+    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
+    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
+    
+    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
+    
+    QuadCurveMenuItem *starMenuItem1 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem5 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+    /*
+    QuadCurveMenuItem *starMenuItem6 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem7 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem8 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem9 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+     */
+    
+    //NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, starMenuItem6, starMenuItem7,starMenuItem8,starMenuItem9, nil];
+    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, nil];
+    
+    QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:CGRectMake(0,0,100,100) menus:menus];
+	
+    menu.delegate = self;
+    [self.view addSubview:menu];
 }
 
 - (void)viewDidUnload

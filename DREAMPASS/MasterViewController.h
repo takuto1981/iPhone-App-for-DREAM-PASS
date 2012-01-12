@@ -42,5 +42,6 @@
 - (IBAction)searchButtonPressed:(id)sender;
 - (void)_taskFinished:(MasterViewController *)masterViewController;
 - (void)communicateWithServer:(int)pageIndex;
+- (void)pushMoviePage;
 
 @end

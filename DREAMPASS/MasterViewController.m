@@ -87,6 +87,40 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
+    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
+    
+    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
+    
+    QuadCurveMenuItem *starMenuItem1 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem5 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage
+                                                        highlightedContentImage:nil];
+    
+    //NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, starMenuItem6, starMenuItem7,starMenuItem8,starMenuItem9, nil];
+    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, nil];
+    
+    QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:CGRectMake(0,0,100,100) menus:menus];
+	
+    menu.delegate = self;
+    [self.view addSubview:menu];
 }
 
 - (void)viewDidLoad
@@ -131,7 +165,7 @@
         cell = appTableCell;
     }
     
-    cell.titleLabel.text = [[self.eventArray objectAtIndex:indexPath.row] objectForKey:@"title"];
+    cell.titleLabel.text = [[[self.eventArray objectAtIndex:indexPath.row] objectForKey:@"movie"] objectForKey:@"title"];
     cell.placeLabel.text = [[[self.eventArray objectAtIndex:indexPath.row] objectForKey:@"theater"] objectForKey:@"name"];
     cell.begintimeLabel.text = [[[self.eventArray objectAtIndex:indexPath.row] objectForKey:@"shift"] objectForKey:@"start"];
     cell.endtimeLabel.text = [[[self.eventArray objectAtIndex:indexPath.row] objectForKey:@"shift"] objectForKey:@"end"];
@@ -158,7 +192,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    [self pushMoviePage];
 }
 
 - (IBAction)leftBarButtonItemPressed:(id)sender

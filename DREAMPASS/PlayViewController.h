@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
+#import "QuadCurveMenu.h"
 
-@interface PlayViewController : UIViewController
+@interface PlayViewController : UIViewController<QuadCurveMenuDelegate>
 
 @property (nonatomic,retain) IBOutlet UIButton *masterPageButton;
 @property (nonatomic,retain) IBOutlet UIButton *detailPageButton;
